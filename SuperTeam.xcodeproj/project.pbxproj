@@ -99,8 +99,6 @@
 			children = (
 				AC66963520F48D3B0055A4F1 /* David Cornelius */,
 				E66FAE2D20F4870D00764472 /* Zein */,
-				E6F700A920F33C1100722D39 /* New Group */,
-				E6F700A820F3384600722D39 /* Anisa Learning Journey */,
 				E6F7009820F205D400722D39 /* Utility */,
 				E6F7008620F2035F00722D39 /* AppDelegate.swift */,
 				E6F7008820F2035F00722D39 /* ViewController.swift */,
@@ -136,20 +134,6 @@
 				E6F7009F20F20A8600722D39 /* NavigationHelper.swift */,
 			);
 			path = Helper;
-			sourceTree = "<group>";
-		};
-		E6F700A820F3384600722D39 /* Anisa Learning Journey */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Anisa Learning Journey";
-			sourceTree = "<group>";
-		};
-		E6F700A920F33C1100722D39 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     // Mark: Action Delegate
     
     @objc func anisa(){
-        
+        self.performSegue(withIdentifier: "anisaJourney", sender: self) // using basic segue
     }
 
     @objc func indah(){
@@ -52,7 +52,6 @@ class ViewController: UIViewController {
     }
 
     @objc func novieDavid(){
-        self.performSegue(withIdentifier: "anisaJourney", sender: self) // using basic segue
     }
 
     @objc func zein(){

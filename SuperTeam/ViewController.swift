@@ -44,7 +44,7 @@ class ViewController: UIViewController {
     }
 
     @objc func victor(){
-        
+         self.performSegue(withIdentifier: "victorIdentifier", sender: self) // using basic segue
     }
 
     @objc func davidCornelius(){

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AC66963720F48D760055A4F1 /* DavidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC66963620F48D760055A4F1 /* DavidViewController.swift */; };
+		AC66963920F48FE80055A4F1 /* HistoryDavidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC66963820F48FE80055A4F1 /* HistoryDavidViewController.swift */; };
 		E66FAE3020F4875100764472 /* ZeinMainJourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66FAE2F20F4875100764472 /* ZeinMainJourneyViewController.swift */; };
 		E66FAE3320F487E200764472 /* ZeinMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66FAE3120F487E200764472 /* ZeinMainCell.swift */; };
 		E66FAE3420F487E200764472 /* ZeinMainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E66FAE3220F487E200764472 /* ZeinMainCell.xib */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		AC66963620F48D760055A4F1 /* DavidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DavidViewController.swift; sourceTree = "<group>"; };
+		AC66963820F48FE80055A4F1 /* HistoryDavidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDavidViewController.swift; sourceTree = "<group>"; };
 		E66FAE2F20F4875100764472 /* ZeinMainJourneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeinMainJourneyViewController.swift; sourceTree = "<group>"; };
 		E66FAE3120F487E200764472 /* ZeinMainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeinMainCell.swift; sourceTree = "<group>"; };
 		E66FAE3220F487E200764472 /* ZeinMainCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZeinMainCell.xib; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				AC66963620F48D760055A4F1 /* DavidViewController.swift */,
+				AC66963820F48FE80055A4F1 /* HistoryDavidViewController.swift */,
 			);
 			path = "David Cornelius";
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC66963920F48FE80055A4F1 /* HistoryDavidViewController.swift in Sources */,
 				E6F7008920F2035F00722D39 /* ViewController.swift in Sources */,
 				E6F700A020F20A8600722D39 /* NavigationHelper.swift in Sources */,
 				AC66963720F48D760055A4F1 /* DavidViewController.swift in Sources */,
@@ -373,7 +377,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FMBNG35Z38;
+				DEVELOPMENT_TEAM = B4J75524RB;
 				INFOPLIST_FILE = SuperTeam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -391,7 +395,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FMBNG35Z38;
+				DEVELOPMENT_TEAM = B4J75524RB;
 				INFOPLIST_FILE = SuperTeam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

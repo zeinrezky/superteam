@@ -41,7 +41,7 @@
                         <outlet property="ourTableView" destination="GT6-WN-fnb" id="Lu2-K8-gpX"/>
                         <segue destination="ERv-zc-8iO" kind="show" identifier="journeySegue" id="YaJ-Te-qH4"/>
                         <segue destination="hpf-g5-Sa0" kind="show" identifier="anisaJourney" id="hk2-4r-e2G"/>
-                        <segue destination="RgV-Sw-C9r" kind="show" id="z2g-ZW-y9z"/>
+                        <segue destination="RgV-Sw-C9r" kind="show" identifier="davidSegue" id="z2g-ZW-y9z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -189,6 +189,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="RgV-Sw-C9r" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eE0-sy-snc">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

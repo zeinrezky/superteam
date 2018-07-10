@@ -57,17 +57,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tkb-h4-d1w">
-                                <rect key="frame" x="44" y="137" width="286" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Lesson UIKIT"/>
-                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iYB-TC-Iyl">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ERv-zc-8iO" id="0q9-Uj-Tev"/>
+                                    <outlet property="delegate" destination="ERv-zc-8iO" id="t8i-kW-M18"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sU8-ic-r5d" firstAttribute="trailing" secondItem="iYB-TC-Iyl" secondAttribute="trailing" id="Idl-xH-Vts"/>
+                            <constraint firstItem="sU8-ic-r5d" firstAttribute="bottom" secondItem="iYB-TC-Iyl" secondAttribute="bottom" id="NsR-W6-jJ1"/>
+                            <constraint firstItem="iYB-TC-Iyl" firstAttribute="top" secondItem="sU8-ic-r5d" secondAttribute="top" id="nY9-xq-7sQ"/>
+                            <constraint firstItem="iYB-TC-Iyl" firstAttribute="leading" secondItem="sU8-ic-r5d" secondAttribute="leading" id="zZ9-ct-XJa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="sU8-ic-r5d"/>
                     </view>
                     <connections>
-                        <outlet property="lessonUIKIT" destination="Tkb-h4-d1w" id="mAr-GX-PgP"/>
+                        <outlet property="zeinTable" destination="iYB-TC-Iyl" id="sar-gt-5zD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AAd-xD-z2f" userLabel="First Responder" sceneMemberID="firstResponder"/>

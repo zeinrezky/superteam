@@ -42,7 +42,7 @@
                         <segue destination="ERv-zc-8iO" kind="show" identifier="journeySegue" id="YaJ-Te-qH4"/>
                         <segue destination="hpf-g5-Sa0" kind="show" identifier="anisaJourney" id="hk2-4r-e2G"/>
                         <segue destination="RgV-Sw-C9r" kind="show" identifier="davidSegue" id="z2g-ZW-y9z"/>
-                        <segue destination="5m4-Y4-LgQ" kind="show" id="jhq-cU-wW5"/>
+                        <segue destination="OIJ-8T-8zf" kind="show" identifier="rahmaJourney" id="L6P-5y-fxL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -88,6 +88,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ur-8T-sjF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2686" y="-1043"/>
+        </scene>
+        <!--Rahma View Controller-->
+        <scene sceneID="jlw-67-kwC">
+            <objects>
+                <viewController id="OIJ-8T-8zf" customClass="RahmaViewController" customModule="SuperTeam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aGH-TX-giw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NEW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2J-EO-eRm">
+                                <rect key="frame" x="64" y="396" width="249" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="3OX-RR-6Qb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5vJ-ls-A84" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3663.1999999999998" y="-599.26108374384239"/>
         </scene>
         <!--David View Controller-->
         <scene sceneID="bFe-1y-pn5">

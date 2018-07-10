@@ -40,7 +40,7 @@ class ViewController: UIViewController {
     }
 
     @objc func rahma(){
-        
+        self.performSegue(withIdentifier: "rahmaJourney", sender: self) // using basic segue
     }
 
     @objc func victor(){
@@ -48,6 +48,7 @@ class ViewController: UIViewController {
     }
 
     @objc func davidCornelius(){
+        // Ini digunakan untuk pergi ke vc lain
         self.performSegue(withIdentifier: "davidSegue", sender: self) // using basic segue
     }
 

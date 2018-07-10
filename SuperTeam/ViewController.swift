@@ -52,11 +52,11 @@ class ViewController: UIViewController {
     }
 
     @objc func novieDavid(){
-        
+        self.performSegue(withIdentifier: "anisaJourney", sender: self) // using basic segue
     }
 
     @objc func zein(){
-        
+        self.performSegue(withIdentifier: "journeySegue", sender: self) // using basic segue
     }
 }
 

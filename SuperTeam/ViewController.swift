@@ -40,7 +40,7 @@ class ViewController: UIViewController {
     }
 
     @objc func rahma(){
-        
+        self.performSegue(withIdentifier: "rahmaJourney", sender: self) // using basic segue
     }
 
     @objc func victor(){

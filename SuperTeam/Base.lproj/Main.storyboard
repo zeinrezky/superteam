@@ -77,26 +77,82 @@
                     </view>
                     <connections>
                         <outlet property="zeinTable" destination="iYB-TC-Iyl" id="sar-gt-5zD"/>
+                        <segue destination="KzV-zp-Rb0" kind="show" identifier="toUIKitLessonSegue" id="6r3-E6-bhc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AAd-xD-z2f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1823" y="-1043"/>
         </scene>
-        <!--View Controller-->
+        <!--Zein Kit Lesson View Controller-->
         <scene sceneID="xtE-7M-VJO">
             <objects>
-                <viewController id="KzV-zp-Rb0" sceneMemberID="viewController">
+                <viewController id="KzV-zp-Rb0" customClass="ZeinKitLessonViewController" customModule="SuperTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4kH-3j-mE4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JYe-RR-FsO">
+                                <rect key="frame" x="163" y="391" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switchChanged:" destination="KzV-zp-Rb0" eventType="valueChanged" id="vhe-ev-afx"/>
+                                </connections>
+                            </switch>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UeF-Zc-tFf">
+                                <rect key="frame" x="87" y="145" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAD-UL-zig">
+                                        <rect key="frame" x="8" y="53" width="184" height="116"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5IO-RZ-y8V">
+                                        <rect key="frame" x="8" y="8" width="184" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <segments>
+                                            <segment title="First"/>
+                                            <segment title="Second"/>
+                                        </segments>
+                                        <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <connections>
+                                            <action selector="segmentedChanged:" destination="KzV-zp-Rb0" eventType="valueChanged" id="lxS-Kh-60R"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ZC" translatesAutoresizingMaskIntoConstraints="NO" id="Jk6-eM-g4b">
+                                <rect key="frame" x="87" y="460" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="22g-sx-eol">
+                                <rect key="frame" x="44" y="691" width="285" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="KzV-zp-Rb0" eventType="valueChanged" id="TTZ-4K-RCX"/>
+                                </connections>
+                            </slider>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="MvM-8A-w7b"/>
                     </view>
+                    <connections>
+                        <outlet property="myImage" destination="Jk6-eM-g4b" id="kIx-UL-GzM"/>
+                        <outlet property="myLabel" destination="JAD-UL-zig" id="fcV-Zl-Cqa"/>
+                        <outlet property="mySegmented" destination="5IO-RZ-y8V" id="13a-cd-vpk"/>
+                        <outlet property="mySlider" destination="22g-sx-eol" id="2W4-5a-GOF"/>
+                        <outlet property="mySwitch" destination="JYe-RR-FsO" id="dVt-uc-odN"/>
+                        <outlet property="myView" destination="UeF-Zc-tFf" id="0jQ-My-nME"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ur-8T-sjF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2686" y="-1043"/>
+            <point key="canvasLocation" x="2685.5999999999999" y="-1043.3497536945813"/>
         </scene>
         <!--Rahma View Controller-->
         <scene sceneID="jlw-67-kwC">
@@ -260,6 +316,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ZC" width="910" height="882"/>
         <image name="ecstasy" width="1920" height="1280"/>
     </resources>
 </document>

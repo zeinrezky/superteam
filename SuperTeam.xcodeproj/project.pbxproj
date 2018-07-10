@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC66963720F48D760055A4F1 /* DavidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC66963620F48D760055A4F1 /* DavidViewController.swift */; };
 		E66FAE3020F4875100764472 /* ZeinMainJourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66FAE2F20F4875100764472 /* ZeinMainJourneyViewController.swift */; };
 		E66FAE3320F487E200764472 /* ZeinMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66FAE3120F487E200764472 /* ZeinMainCell.swift */; };
 		E66FAE3420F487E200764472 /* ZeinMainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E66FAE3220F487E200764472 /* ZeinMainCell.xib */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC66963620F48D760055A4F1 /* DavidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DavidViewController.swift; sourceTree = "<group>"; };
 		E66FAE2F20F4875100764472 /* ZeinMainJourneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeinMainJourneyViewController.swift; sourceTree = "<group>"; };
 		E66FAE3120F487E200764472 /* ZeinMainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeinMainCell.swift; sourceTree = "<group>"; };
 		E66FAE3220F487E200764472 /* ZeinMainCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZeinMainCell.xib; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC66963520F48D3B0055A4F1 /* David Cornelius */ = {
+			isa = PBXGroup;
+			children = (
+				AC66963620F48D760055A4F1 /* DavidViewController.swift */,
+			);
+			path = "David Cornelius";
+			sourceTree = "<group>";
+		};
 		E66FAE2D20F4870D00764472 /* Zein */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +94,7 @@
 		E6F7008520F2035F00722D39 /* SuperTeam */ = {
 			isa = PBXGroup;
 			children = (
+				AC66963520F48D3B0055A4F1 /* David Cornelius */,
 				E66FAE2D20F4870D00764472 /* Zein */,
 				E6F700A920F33C1100722D39 /* New Group */,
 				E6F700A820F3384600722D39 /* Anisa Learning Journey */,
@@ -213,6 +224,7 @@
 			files = (
 				E6F7008920F2035F00722D39 /* ViewController.swift in Sources */,
 				E6F700A020F20A8600722D39 /* NavigationHelper.swift in Sources */,
+				AC66963720F48D760055A4F1 /* DavidViewController.swift in Sources */,
 				E6F7008720F2035F00722D39 /* AppDelegate.swift in Sources */,
 				E66FAE3020F4875100764472 /* ZeinMainJourneyViewController.swift in Sources */,
 				E66FAE3320F487E200764472 /* ZeinMainCell.swift in Sources */,

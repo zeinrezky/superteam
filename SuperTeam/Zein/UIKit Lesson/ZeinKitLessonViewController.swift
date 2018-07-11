@@ -101,13 +101,13 @@ class ZeinKitLessonViewController: UIViewController {
     
     // Playing with UIView.Animate
     func runningAnimation(){
+        let anotherView = UIView()
         myAnimationView.layer.cornerRadius = myAnimationView.frame.size.width/2
         myAnimationView.layer.masksToBounds = true
         UIView.animate(withDuration: 1, animations: {
             self.myAnimationView.backgroundColor = .brown
             self.myAnimationView.frame.size.width += 10
             self.myAnimationView.frame.size.height += 10
-            let anotherView = UIView()
             anotherView.frame = CGRect(x: CGFloat(arc4random_uniform(300)), y: CGFloat(arc4random_uniform(800)), width: self.myAnimationView.frame.size.width, height: self.myAnimationView.frame.size.height)
             self.view.addSubview(anotherView)
             anotherView.backgroundColor = .purple
@@ -117,6 +117,7 @@ class ZeinKitLessonViewController: UIViewController {
         }) { _ in
             UIView.animate(withDuration: 1, delay: 0.25, options: [.autoreverse, .repeat], animations: {
                 self.myAnimationView.frame.origin.y -= 20
+                anotherView.frame.origin.y -= 20
             })
         }
     }

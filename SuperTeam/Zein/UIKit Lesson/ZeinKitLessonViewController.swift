@@ -16,6 +16,7 @@ class ZeinKitLessonViewController: UIViewController {
     @IBOutlet weak var myLabel: UILabel!
     @IBOutlet weak var myImage: UIImageView!
     @IBOutlet weak var mySlider: UISlider!
+    @IBOutlet weak var myAnimationView: UIView!
     
     var aCIImage = CIImage();
     var contrastFilter: CIFilter!;
@@ -37,6 +38,7 @@ class ZeinKitLessonViewController: UIViewController {
     func generalInit(){
         customMySegment()
         customMyView()
+        runningAnimation()
     }
     
     // Event listener to detect value changed in Switch Control
@@ -93,6 +95,29 @@ class ZeinKitLessonViewController: UIViewController {
     // Event to catch changes in slider value
     @IBAction func sliderChanged(_ sender: Any) {
         imageBrightness(imgView: myImage, sliderValue: CGFloat(mySlider.value), image: myImage.image!)
+    }
+    
+    
+    // Playing with UIView.Animate
+    func runningAnimation(){
+        myAnimationView.layer.cornerRadius = myAnimationView.frame.size.width/2
+        myAnimationView.layer.masksToBounds = true
+        UIView.animate(withDuration: 1, animations: {
+            self.myAnimationView.backgroundColor = .brown
+            self.myAnimationView.frame.size.width += 10
+            self.myAnimationView.frame.size.height += 10
+            let anotherView = UIView()
+            anotherView.frame = CGRect(x: CGFloat(arc4random_uniform(300)), y: CGFloat(arc4random_uniform(800)), width: self.myAnimationView.frame.size.width, height: self.myAnimationView.frame.size.height)
+            self.view.addSubview(anotherView)
+            anotherView.backgroundColor = .purple
+            anotherView.frame.size.width += 10
+            anotherView.frame.size.height += 10
+
+        }) { _ in
+            UIView.animate(withDuration: 1, delay: 0.25, options: [.autoreverse, .repeat], animations: {
+                self.myAnimationView.frame.origin.y -= 20
+            })
+        }
     }
     
     /*

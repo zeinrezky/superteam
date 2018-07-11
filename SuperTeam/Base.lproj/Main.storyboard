@@ -137,11 +137,17 @@
                                     <action selector="sliderChanged:" destination="KzV-zp-Rb0" eventType="valueChanged" id="TTZ-4K-RCX"/>
                                 </connections>
                             </slider>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TRN-tS-Jbv">
+                                <rect key="frame" x="295" y="374" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="MvM-8A-w7b"/>
                     </view>
                     <connections>
+                        <outlet property="myAnimationView" destination="TRN-tS-Jbv" id="agt-LC-Hdg"/>
                         <outlet property="myImage" destination="Jk6-eM-g4b" id="kIx-UL-GzM"/>
                         <outlet property="myLabel" destination="JAD-UL-zig" id="fcV-Zl-Cqa"/>
                         <outlet property="mySegmented" destination="5IO-RZ-y8V" id="13a-cd-vpk"/>

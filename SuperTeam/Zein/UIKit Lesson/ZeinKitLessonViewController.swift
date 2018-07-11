@@ -37,7 +37,6 @@ class ZeinKitLessonViewController: UIViewController {
     func generalInit(){
         customMySegment()
         customMyView()
-        customMyImage()
     }
     
     // Event listener to detect value changed in Switch Control

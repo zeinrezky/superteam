@@ -15,6 +15,11 @@ class ZeinMainJourneyViewController: UIViewController {
     
     let myLessonJourney = ["UIKit", "Animation", "AutoLayout", "Custom TableView"]
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        UIApplication.shared.statusBarStyle = .default
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

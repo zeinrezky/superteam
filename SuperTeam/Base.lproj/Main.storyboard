@@ -186,34 +186,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ecstasy" translatesAutoresizingMaskIntoConstraints="NO" id="Q1o-pD-Tx7">
-                                <rect key="frame" x="0.0" y="88" width="375" height="206"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DC" translatesAutoresizingMaskIntoConstraints="NO" id="Q1o-pD-Tx7">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkK-87-1Tz">
-                                <rect key="frame" x="233" y="301" width="68" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="next"/>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ecstasy" translatesAutoresizingMaskIntoConstraints="NO" id="cGN-0B-D0W">
-                                <rect key="frame" x="0.0" y="421" width="375" height="206"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JdK-ZX-3n3">
-                                <rect key="frame" x="233" y="633" width="100" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="next"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Pw-xJ-Kgm">
-                                <rect key="frame" x="84" y="633" width="100" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="back"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D8U-Bn-wvQ">
-                                <rect key="frame" x="84" y="301" width="61" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="back"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="T5U-U1-xHE"/>
@@ -224,10 +200,10 @@
             </objects>
             <point key="canvasLocation" x="2844" y="357.63546798029557"/>
         </scene>
-        <!--View Controller-->
+        <!--History David View Controller-->
         <scene sceneID="ZF3-pv-FMb">
             <objects>
-                <viewController id="ein-p4-JdG" sceneMemberID="viewController">
+                <viewController id="ein-p4-JdG" customClass="HistoryDavidViewController" customModule="SuperTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JQ4-Jw-iOf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -238,7 +214,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s5e-7K-4zc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3801" y="358"/>
+            <point key="canvasLocation" x="3774" y="358"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="iuf-Xv-hA7">
@@ -340,8 +316,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="back" width="64" height="64"/>
-        <image name="ecstasy" width="1920" height="1280"/>
-        <image name="next" width="64" height="64"/>
+        <image name="DC" width="908" height="898"/>
+        <image name="ZC" width="910" height="882"/>
     </resources>
 </document>

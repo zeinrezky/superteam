@@ -98,6 +98,9 @@ class ZeinKitLessonViewController: UIViewController {
         imageBrightness(imgView: myImage, sliderValue: CGFloat(mySlider.value), image: myImage.image!)
     }
     
+    @IBAction func tapped(_ sender: Any) {
+     
+    }
     
     // Playing with UIView.Animate
     func runningAnimation(){
@@ -121,6 +124,8 @@ class ZeinKitLessonViewController: UIViewController {
             })
         }
     }
+    
+    
     
     /*
     // MARK: - Navigation

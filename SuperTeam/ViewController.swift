@@ -53,6 +53,7 @@ class ViewController: UIViewController {
     }
 
     @objc func novieDavid(){
+        self.performSegue(withIdentifier: "novieJourney", sender: self) // using basic segue
     }
 
     @objc func zein(){

@@ -43,6 +43,7 @@
                         <segue destination="hpf-g5-Sa0" kind="show" identifier="anisaJourney" id="hk2-4r-e2G"/>
                         <segue destination="RgV-Sw-C9r" kind="show" identifier="davidSegue" id="z2g-ZW-y9z"/>
                         <segue destination="OIJ-8T-8zf" kind="show" identifier="rahmaJourney" id="L6P-5y-fxL"/>
+                        <segue destination="5m4-Y4-LgQ" kind="show" identifier="novieJourney" id="Qq2-JL-g6I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -314,7 +315,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P6S-f3-HjX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1822" y="1337"/>
+            <point key="canvasLocation" x="1822" y="1340"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Lhu-Mj-HuA">
